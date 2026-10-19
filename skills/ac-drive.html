@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AC Drive | Mohamed ElGendy</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        
+<a href="../index.html" class="logo">MOHAMED ELGENDY</a>
+
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#skills">Skills</a>
+            <a href="../index.html#projects">Certifications & Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Skill Hero -->
+
+    <header class="skill-hero">
+
+        <p class="hero-small">
+            INDUSTRIAL AUTOMATION
+        </p>
+
+        <h1>AC DRIVE</h1>
+
+        <p>
+            Variable Frequency Drive (VFD)
+        </p>
+
+    </header>
+
+
+    <!-- What I Learned -->
+
+    <section>
+
+        <h2>WHAT I LEARNED</h2>
+
+        <div class="learning-list">
+
+<div onclick="openACDriveFundamentals()"
+     style="cursor: pointer;">
+    AC Drive Fundamentals
+</div>
+
+<div onclick="openACDriveWiring()" style="cursor: pointer;">
+    AC Drive Wiring  [ ex. Delta ]
+</div>
+
+<div onclick="openACDriveParameters()" style="cursor: pointer;">
+    Drive Parameters [ ex. Delta ]
+</div>
+
+<div onclick="openACDriveMasterSlave()"
+     style="cursor: pointer;">
+    Slave / Master Drive [ ex. Delta ]
+</div>
+            
+            <div>Motor Protection</div>
+
+            <div>Drive Faults & Alarms</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Tasks -->
+
+    <section>
+
+        <h2>TASKS</h2>
+
+        <div class="task-container">
+
+            <div class="task-card">
+
+                <span>01</span>
+
+                <h3>Drive Wiring</h3>
+
+                <p>
+                    Connecting the AC drive with the
+                    motor and control signals.
+                </p>
+
+            </div>
+
+
+            <div class="task-card">
+
+                <span>02</span>
+
+                <h3>Parameter Configuration</h3>
+
+                <p>
+                    Configuring motor parameters,
+                    acceleration and deceleration times.
+                </p>
+
+            </div>
+
+
+            <div class="task-card">
+
+                <span>03</span>
+
+                <h3>PLC & AC Drive Control</h3>
+
+                <p>
+                    Controlling the AC drive from a PLC
+                    using digital and analog signals.
+                </p>
+
+            </div>
+
+        </div>
+                <!-- Additional Electrical Control Circuits Hint -->
+
+        <div class="circuits-hint">
+
+            <h3>More Than What’s Shown</h3>
+
+            <p>
+               These are just some of the AC drive applications and motor control tasks I have practiced.
+               More practical exercises and applications are part of my ongoing learning journey.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+
+    <section>
+
+        <h2>PROJECTS</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card"
+                 onclick="openTaskImage('../Project-Images/IMG_20260809_131338.jpg')"
+                 style="cursor: pointer;">
+
+                <span class="card-type">
+                    58 ➡︎ 60 — PRACTICAL PROJECT
+                </span>
+
+                <h3>
+                    Practical AC Drive, Classic Control & PLC
+                </h3>
+
+                <p>
+                    Hands-on lab tasks involving AC Drive wiring
+                    and control circuit implementation using
+                    Classic Control and PLC.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Additional Projects Hint -->
+
+        <div class="circuits-hint">
+
+            <h3>More Than What’s Shown</h3>
+
+            <p>
+                The projects shown here are selected examples of my practical work.
+                I have also worked on other projects and practical exercises as part
+                of my ongoing learning journey.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Tools -->
+
+    <section>
+
+        <h2>TOOLS & EQUIPMENT</h2>
+
+        <div class="tools-list">
+
+            <span>AC Drives</span>
+
+            <span>Induction Motors</span>
+
+            <span>PLC</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Back -->
+
+    <section class="back-section">
+
+        <a href="../index.html#skills" class="hero-button">
+            ← BACK TO SKILLS
+        </a>
+
+    </section>
+
+
+    <!-- Project Image Lightbox -->
+
+    <div id="task-lightbox" class="task-lightbox">
+
+        <button class="task-lightbox-close"
+                onclick="closeTaskImage()">
+
+            &times;
+
+        </button>
+
+        <img id="task-image"
+             src=""
+             alt="Project Image">
+
+
+
+
+<!-- AC Drive Fundamentals Gallery -->
+<div id="ac-drive-fundamentals-gallery"
+     class="relay-gallery"
+     style="display: none;">
+
+    <button class="relay-prev"
+            onclick="previousACDriveFundamentalsImage()"
+            aria-label="Previous image">
+        ❮
+    </button>
+
+    <img id="ac-drive-fundamentals-image"
+         src=""
+         alt="AC Drive Fundamentals">
+
+    <button class="relay-next"
+            onclick="nextACDriveFundamentalsImage()"
+            aria-label="Next image">
+        ❯
+    </button>
+
+</div>
+
+<!-- AC Drive Wiring Gallery -->
+<div id="ac-drive-wiring-gallery"
+     class="relay-gallery"
+     style="display: none;">
+
+    <button class="relay-prev"
+            onclick="previousACDriveWiringImage()"
+            aria-label="Previous image">
+        ❮
+    </button>
+
+    <img id="ac-drive-wiring-image"
+         src=""
+         alt="AC Drive Wiring">
+
+    <button class="relay-next"
+            onclick="nextACDriveWiringImage()"
+            aria-label="Next image">
+        ❯
+    </button>
+
+</div>
+
+
+<!-- AC Drive Parameters Gallery -->
+<div id="ac-drive-parameters-gallery"
+     class="relay-gallery"
+     style="display: none;">
+
+    <img id="ac-drive-parameters-image"
+         src=""
+         alt="AC Drive Parameters">
+
+    <div class="ac-drive-parameters-navigation">
+        <button class="relay-prev"
+                onclick="previousACDriveParametersImage()"
+                aria-label="Previous image">
+            ❮
+        </button>
+
+        <button class="relay-next"
+                onclick="nextACDriveParametersImage()"
+                aria-label="Next image">
+            ❯
+        </button>
+    </div>
+
+</div>
+
+<!-- AC Drive Master / Slave Gallery -->
+<div id="ac-drive-master-slave-gallery"
+     class="relay-gallery"
+     style="display: none;">
+
+    <button class="relay-prev"
+            onclick="previousACDriveMasterSlaveImage()"
+            aria-label="Previous image">
+        ❮
+    </button>
+
+    <img id="ac-drive-master-slave-image"
+         src=""
+         alt="AC Drive Master Slave Configuration">
+
+    <button class="relay-next"
+            onclick="nextACDriveMasterSlaveImage()"
+            aria-label="Next image">
+        ❯
+    </button>
+
+</div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="../script.js"></script>
+</body>
+</html>

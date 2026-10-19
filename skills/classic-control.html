@@ -1,0 +1,1167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classic Control | Mohamed ElGendy</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        
+<a href="../index.html" class="logo">MOHAMED ELGENDY</a>
+
+
+        <div class="nav-links">
+
+            <a href="../index.html">Home</a>
+
+            <a href="../index.html#skills">Skills</a>
+
+            <a href="../index.html#projects">
+                Certifications & Projects
+            </a>
+
+            <a href="../index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Skill Hero -->
+
+    <header class="skill-hero">
+
+        <p class="hero-small">
+            INDUSTRIAL AUTOMATION
+        </p>
+
+        <h1>CLASSIC CONTROL</h1>
+
+        <p>
+            Electrical Control Systems
+        </p>
+
+    </header>
+
+
+    <!-- What I Learned -->
+
+    <section>
+
+        <h2>WHAT I LEARNED</h2>
+
+        <div class="learning-list">
+
+            <!-- Control Fundamentals -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openTaskImage('../Learning-Images/classic_control/control_fundamentals.png')"
+            >
+                Control Fundamentals
+            </div>
+
+
+            <!-- Switches & Push Buttons -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openTaskImage('../Learning-Images/classic_control/switches.png.png')"
+            >
+                Switches & Push Buttons
+            </div>
+
+
+            <!-- Relays -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openRelayImages()"
+            >
+                Relays
+            </div>
+
+
+            <!-- Contactors -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openTaskImage('../Learning-Images/classic_control/contactor.png')"
+            >
+                Contactors
+            </div>
+
+
+            <!-- Motor Control Circuits -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="window.scrollTo({
+                    top: document.getElementById('tasks').offsetTop - 100,
+                    behavior: 'smooth'
+                })"
+            >
+                Motor Control Circuits
+            </div>
+
+
+            <!-- Forward / Reverse Control -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="
+                    window.scrollTo({
+                        top: document.getElementById('tasks').offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+
+                    setTimeout(function() {
+
+                        const task =
+                            document.getElementById('forward-reverse-task');
+
+                        task.style.borderColor = '#38bdf8';
+
+                        task.style.boxShadow =
+                            '0 0 20px rgba(56, 189, 248, 0.25)';
+
+                        setTimeout(function() {
+
+                            task.style.borderColor = '';
+
+                            task.style.boxShadow = '';
+
+                        }, 2000);
+
+                    }, 600);
+                "
+            >
+                Forward / Reverse Control
+            </div>
+
+
+            <!-- Electrical & Mechanical Interlock -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openTaskImage('../Learning-Images/classic_control/interlock.png')"
+            >
+                Electrical & Mechanical Interlock
+            </div>
+
+
+            <!-- Motor Current & Starting Calculations -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openTaskImage('../Learning-Images/classic_control/motor current and starting caculations.jpg')"
+            >
+                Motor Current & Starting Calculations
+            </div>
+
+
+            <!-- Timers -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openTimerImages()"
+            >
+                Timers
+            </div>
+
+
+            <!-- Motor Starting Methods -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openMotorStartingImages()"
+            >
+                Motor Starting Methods
+            </div>
+
+
+            <!-- Star-Delta Method -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openStarDeltaImages()"
+            >
+                Star-Delta Method
+            </div>
+
+
+
+
+
+            <!-- Troubleshooting & Protection -->
+            
+            <div
+                class="learning-item-clickable"
+                onclick="openTroubleshootingImages()"
+            >
+                Troubleshooting & Protection
+            </div>
+
+
+
+            <!-- ATS -->
+            
+            <div
+                class="learning-item-clickable"
+                onclick="openATSImages()"
+            >
+                ATS
+            </div>
+
+            <!-- UPS -->
+
+
+
+            <div
+                class="learning-item-clickable"
+                onclick="openUPSImages()"
+            >
+                UPS
+            </div>
+            
+            <!-- Cable Selection -->
+
+            <div
+                class="learning-item-clickable"
+                onclick="openTaskImage('../Learning-Images/classic_control/cabledesign_.jpg')"
+            >
+                Cable Selection
+            </div>
+
+
+           <!-- Power Factor -->
+           
+           <div
+               class="learning-item-clickable"
+               onclick="openPowerFactorImages()"
+           >
+               Power Factor
+           </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Power & Control Schematics -->
+
+    <section>
+
+        <span id="tasks"></span>
+
+        <h2>Electrical Control Circuits</h2>
+
+        <div class="task-container">
+
+            <!-- TASK 01 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Task-Images/motor-start_stop.png')"
+            >
+
+                <span>01</span>
+
+                <h3>Motor Start / Stop</h3>
+
+                <p>
+                    Basic motor control circuit using
+                    contactor, push buttons and overload relay.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 02 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Task-Images/two station start stop.png')"
+            >
+
+                <span>02</span>
+
+                <h3>Two-Station Start / Stop</h3>
+
+                <p>
+                    Motor control circuit that allows the motor
+                    to be started and stopped from two locations.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 03 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Task-Images/motor_interlocking_control.png')"
+            >
+
+                <span>03</span>
+
+                <h3>Motor Interlocking Control</h3>
+
+                <p>
+                    Motor control circuit that prevents two motors
+                    from running at the same time.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 04 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Task-Images/Motor Sequential Interlocking.png')"
+            >
+
+                <span>04</span>
+
+                <h3>Motor Sequential Interlocking</h3>
+
+                <p>
+                    Motor 2 can only run when Motor 1 is running,
+                    while Motor 1 can only stop when Motor 2 is stopped.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 05 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Task-Images/task-05.png')"
+            >
+
+                <span>05</span>
+
+                <h3>Alternating Motor Control</h3>
+
+                <p>
+                    Two-motor control circuit where starting one motor
+                    automatically stops the other.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 06 -->
+
+            <div
+                class="task-card"
+                onclick="openTimerTaskImages()"
+            >
+
+                <span>06 ➡︎ 11</span>
+
+                <h3>Timer-Based Control Circuits "6-Circuits"</h3>
+
+                <p>
+                    Practical timer-based circuits for motor control,
+                    sequencing, and timed operation.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 012 -->
+
+            <div
+                class="task-card"
+                id="forward-reverse-task"
+                onclick="openTaskImage('../Task-Images/task-07.png')"
+            >
+
+                <span>12</span>
+
+                <h3>Forward / Reverse</h3>
+
+                <p>
+                    Motor direction control using
+                    electrical interlocking.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 13: STAR-DELTA STARTER -->
+
+            <div
+                class="task-card"
+                onclick="openStarDeltaTaskImages()"
+                style="cursor: pointer;"
+            >
+
+                <span>13 ＆ 14</span>
+
+                <h3>Star-Delta Starter</h3>
+
+                <p>
+                    Three-phase motor starting circuit
+                    using Star-Delta configuration.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 015 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Task-Images/task-06.png')"
+            >
+
+                <span>15</span>
+
+                <h3>Alternate Operation Control</h3>
+
+                <p>
+                    Control circuit that prevents either load from operating
+                    twice consecutively, requiring the other load to operate
+                    before it can run again.
+                </p>
+
+            </div>
+
+
+            <!-- TASK 16 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Task-Images/start_stop_one_pb.png')"
+            >
+
+                <span>16</span>
+
+                <h3>Single Push Button Start-Stop Control</h3>
+
+                <p>
+                    Starts and stops a motor using a single push button, toggling its operating state with each press.
+                </p>
+
+            </div>
+
+                        <!-- TASK 17 & 18: ATS -->
+
+            <div
+                class="task-card"
+                onclick="openATSTaskImages()"
+                style="cursor: pointer;"
+            >
+
+                <span>17 &amp; 18</span>
+
+                <h3>Automatic Transfer Switch (ATS)</h3>
+
+                <p>
+                    Automatic transfer switching circuit that transfers
+                    the load between the main power supply and the
+                    backup generator.
+                </p>
+
+            </div>
+
+        </div>
+
+          </div>
+
+        <!-- Additional Electrical Control Circuits Hint -->
+
+        <div class="circuits-hint">
+
+            <h3>More Than What’s Shown</h3>
+
+            <p>
+                These are just some of the electrical control circuits I have designed and practiced.
+                More circuits and practical exercises are part of my ongoing learning journey.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+
+
+
+    <section>
+
+        <h2>PROJECTS</h2>
+
+        <div class="task-container">
+
+            <!-- Project 01 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Project-Images/Lab.jpeg')"
+                style="cursor: pointer;"
+            >
+
+                <span>01</span>
+
+                <h3>Classic Control Lab</h3>
+
+                <p>
+                    Practical classic control project
+                    implemented using electrical control components.
+                </p>
+
+            </div>
+
+
+            <!-- Project 02 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Project-Images/star-delta-forward-reverse.jpeg')"
+                style="cursor: pointer;"
+            >
+
+                <span>02</span>
+
+                <h3>Star-Delta & Forward / Reverse</h3>
+
+                <p>
+                    Practical motor control project combining
+                    Star-Delta starting and Forward / Reverse control.
+                </p>
+
+            </div>
+
+
+            <!-- Project 03 -->
+
+            <div
+                class="task-card"
+                onclick="openTaskImage('../Project-Images/classic.jpg')"
+                style="cursor: pointer;"
+            >
+
+                <span>03</span>
+
+                <h3>Practical Lab Work & Simulation Verification</h3>
+
+                <p>
+                    Official assessment sheet from HA Consulting Group validating the successful
+                    execution and testing of 20+ classic control tasks and simulations using CADe SIMU & EKTS.
+                </p>
+
+            </div>
+
+        </div>
+
+        
+<!-- Additional Projects Hint -->
+
+<div class="circuits-hint">
+
+    <h3>More Than What’s Shown</h3>
+
+    <p>
+        The projects shown here are selected examples of my practical work.
+        I have also worked on other projects and practical exercises as part
+        of my ongoing learning journey.
+    </p>
+
+</div>
+
+
+    </section>
+
+    
+
+
+    <!-- Tools -->
+
+    <section>
+
+        <h2>SOFTWARE TOOLS</h2>
+
+        <div class="tools-list">
+
+            <span>CADe_SIMU</span>
+
+            <span>EKTS</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Back -->
+
+    <section class="back-section">
+
+        <a
+            href="../index.html#skills"
+            class="hero-button"
+        >
+            ← BACK TO SKILLS
+        </a>
+
+    </section>
+
+
+    <!-- IMAGE LIGHTBOX -->
+
+    <div
+        id="task-lightbox"
+        class="certificate-lightbox"
+    >
+
+        <button
+            class="lightbox-close"
+            onclick="closeTaskImage()"
+            aria-label="Close image"
+        >
+            &times;
+        </button>
+
+
+        <!-- Relay Gallery -->
+
+        <div
+            id="relay-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousRelayImage()"
+                aria-label="Previous image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="relay-image"
+                src=""
+                alt="Relay Image"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextRelayImage()"
+                aria-label="Next image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- Relay Counter -->
+
+        <div
+            id="relay-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 2
+        </div>
+
+                <!-- ATS TASK GALLERY -->
+
+        <div
+            id="ats-task-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousATSTaskImage()"
+                aria-label="Previous ATS task image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="ats-task-image"
+                src=""
+                alt="ATS Electrical Control Circuit"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextATSTaskImage()"
+                aria-label="Next ATS task image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+        <!-- ATS TASK COUNTER -->
+
+        <div
+            id="ats-task-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 2
+        </div>
+
+        <!-- Timers Learning Gallery -->
+
+        <div
+            id="timer-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousTimerImage()"
+                aria-label="Previous timer image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="timer-image"
+                src=""
+                alt="Timer Image"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextTimerImage()"
+                aria-label="Next timer image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- Timers Learning Counter -->
+
+        <div
+            id="timer-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 6
+        </div>
+
+<!-- UPS Gallery -->
+
+<div
+    id="ups-gallery"
+    class="relay-gallery"
+    style="display: none;"
+>
+
+    <button
+        class="relay-prev"
+        onclick="previousUPSImage()"
+        aria-label="Previous UPS image"
+    >
+        ❮
+    </button>
+
+    <img
+        id="ups-image"
+        src=""
+        alt="UPS Image"
+    >
+
+    <button
+        class="relay-next"
+        onclick="nextUPSImage()"
+        aria-label="Next UPS image"
+    >
+        ❯
+    </button>
+
+</div>
+
+
+<!-- UPS Counter -->
+
+<div
+    id="ups-counter"
+    class="relay-counter"
+    style="display: none;"
+>
+    1 / 4
+</div>
+        <!-- Motor Starting Methods Gallery -->
+
+        <div
+            id="motor-starting-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousMotorStartingImage()"
+                aria-label="Previous Motor Starting image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="motor-starting-image"
+                src=""
+                alt="Motor Starting Method Image"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextMotorStartingImage()"
+                aria-label="Next Motor Starting image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- Motor Starting Methods Counter -->
+
+        <div
+            id="motor-starting-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 6
+        </div>
+
+
+        <!-- Star-Delta Learning Gallery -->
+
+        <div
+            id="star-delta-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousStarDeltaImage()"
+                aria-label="Previous Star-Delta image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="star-delta-image"
+                src=""
+                alt="Star-Delta Method Image"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextStarDeltaImage()"
+                aria-label="Next Star-Delta image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- Star-Delta Learning Counter -->
+
+        <div
+            id="star-delta-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 5
+        </div>
+
+
+        <!-- TIMER CONTROL TASKS INFO -->
+
+        <div
+            id="timer-task-info"
+            class="timer-task-info"
+            style="display: none;"
+        >
+
+            <h3 id="timer-task-title"></h3>
+
+            <p id="timer-task-description"></p>
+
+        </div>
+
+
+        <!-- Timer Tasks Gallery -->
+
+        <div
+            id="timer-task-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousTimerTaskImage()"
+                aria-label="Previous timer task image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="timer-task-image"
+                src=""
+                alt="Timer Control Task"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextTimerTaskImage()"
+                aria-label="Next timer task image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- Timer Tasks Counter -->
+
+        <div
+            id="timer-task-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 6
+        </div>
+
+
+        <!-- NEW: STAR-DELTA STARTER TASK INFO -->
+
+        <div
+            id="star-delta-task-info"
+            class="timer-task-info"
+            style="display: none;"
+        >
+
+            <h3 id="star-delta-task-title"></h3>
+
+            <p id="star-delta-task-description"></p>
+
+        </div>
+
+
+        <!-- NEW: STAR-DELTA STARTER TASK GALLERY -->
+
+        <div
+            id="star-delta-task-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousStarDeltaTaskImage()"
+                aria-label="Previous Star-Delta task image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="star-delta-task-image"
+                src=""
+                alt="Star-Delta Starter Control Circuit"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextStarDeltaTaskImage()"
+                aria-label="Next Star-Delta task image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- NEW: STAR-DELTA STARTER TASK COUNTER -->
+
+        <div
+            id="star-delta-task-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 2
+        </div>
+
+<!-- Troubleshooting & Protection Gallery -->
+
+<div
+    id="troubleshooting-gallery"
+    class="relay-gallery"
+    style="display: none;"
+>
+
+    <button
+        class="relay-prev"
+        onclick="previousTroubleshootingImage()"
+        aria-label="Previous troubleshooting image"
+    >
+        ❮
+    </button>
+
+    <img
+        id="troubleshooting-image"
+        src=""
+        alt="Troubleshooting and Protection Image"
+    >
+
+    <button
+        class="relay-next"
+        onclick="nextTroubleshootingImage()"
+        aria-label="Next troubleshooting image"
+    >
+        ❯
+    </button>
+
+</div>
+
+
+<!-- Troubleshooting & Protection Counter -->
+
+<div
+    id="troubleshooting-counter"
+    class="relay-counter"
+    style="display: none;"
+>
+    1 / 12
+</div>
+
+<!-- ATS Gallery -->
+
+<div
+    id="ats-gallery"
+    class="relay-gallery"
+    style="display: none;"
+>
+
+    <button
+        class="relay-prev"
+        onclick="previousATSImage()"
+        aria-label="Previous ATS image"
+    >
+        ❮
+    </button>
+
+    <img
+        id="ats-image"
+        src=""
+        alt="ATS Image"
+    >
+
+    <button
+        class="relay-next"
+        onclick="nextATSImage()"
+        aria-label="Next ATS image"
+    >
+        ❯
+    </button>
+
+</div>
+
+
+<!-- ATS Counter -->
+
+<div
+    id="ats-counter"
+    class="relay-counter"
+    style="display: none;"
+>
+    1 / 5
+</div>
+
+        <!-- Contactor Gallery -->
+
+        <div
+            id="contactor-gallery"
+            class="relay-gallery"
+            style="display: none;"
+        >
+
+            <button
+                class="relay-prev"
+                onclick="previousContactorImage()"
+                aria-label="Previous image"
+            >
+                ❮
+            </button>
+
+            <img
+                id="contactor-image"
+                src=""
+                alt="Contactor Image"
+            >
+
+            <button
+                class="relay-next"
+                onclick="nextContactorImage()"
+                aria-label="Next image"
+            >
+                ❯
+            </button>
+
+        </div>
+
+
+        <!-- Contactor Counter -->
+
+        <div
+            id="contactor-counter"
+            class="relay-counter"
+            style="display: none;"
+        >
+            1 / 2
+        </div>
+
+
+        <!-- Single Image -->
+
+        <img
+            id="task-image"
+            src=""
+            alt="Learning Image"
+        >
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
